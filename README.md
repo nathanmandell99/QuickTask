@@ -1,5 +1,5 @@
 # QuickTask
-A clean, simplistic task manager for web, iOS, and Android.
+A simple and clean task manager for web, iOS, and Android.
 
 ## Set-up
 
