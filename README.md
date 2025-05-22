@@ -5,10 +5,10 @@ A simplistic but clean task manager for web, iOS, and Android.
 
 1. Clone repo
 
-  ```bash
-  git clone https://github.com/nathanmandell99/QuickTask
-  cd QuickTask
-  ```
+   ```bash
+   git clone https://github.com/nathanmandell99/QuickTask
+   cd QuickTask
+   ```
 
 2. Install dependencies
 
