@@ -25,7 +25,7 @@ A simplistic but clean task manager for web, iOS, and Android.
 From here, press `w` in the CLI to open the web version. To view the app
 version, it is simplest to use [Expo Go](https://expo.dev/go), which can be installed from
 the App Store or the Play Store. Once Expo Go is installed, open it
-and select "Scan QR Code." Scan the QR code printed on the CLI after
+and select "Scan QR Code." Scan the QR code printed in the terminal after
 having completed step 3, and QuickTask will be opened. Note that
 the mobile device running Expo Go must be connected to the same
 WiFi network as the system running `npx expo start`.
