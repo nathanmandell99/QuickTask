@@ -1,49 +1,54 @@
 # QuickTask
 A simplistic but clean task manager for web, iOS, and Android.
 
-## Get started
+## Set-up
 
-1. Install dependencies
+1. Clone repo
+
+  ```bash
+  git clone https://github.com/nathanmandell99/QuickTask
+  cd QuickTask
+  ```
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the app
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+From here, press `w` in the CLI to open the web version. To view the app
+version, it is simplest to use [Expo Go](https://expo.dev/go), which can be installed from
+the App Store or the Play Store. Once Expo Go is installed, open it
+and select "Scan QR Code." Scan the QR code printed on the CLI after
+having completed step 3, and QuickTask will be opened. Note that
+the mobile device running Expo Go must be connected to the same
+WiFi network as the system running `npx expo start`.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Use
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. **Create Task:** The application starts off without any tasks. To
+create a task, press "New Task" at the bottom of the screen, then
+fill in a task title (required) and a short description (optional,
+cannot exceed 100 characters). Once these are filled in, press "Create
+Task." You will be returned to the task list and the new task will
+appear.
 
-## Get a fresh project
+2. **Mark Task Complete**: A task can be marked complete by tapping/clicking
+on the checkbox. It will be moved to the "Completed" section.
+Note that a complete task can also be moved back to the "Tasks"
+section by tapping/clicking on the checkbox again.
 
-When you're ready, run:
+3. **Delete Task:** To delete a task, simply press the "Delete"
+button to the right of the task title/description. This can be done
+regardless of whether a task is marked as complete or not.
 
-```bash
-npm run reset-project
-```
+## Third-Party Libraries
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+`react-native-safe-area-context` was used to guarantee proper layout
+handling.
