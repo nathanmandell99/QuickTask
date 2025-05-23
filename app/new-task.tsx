@@ -56,6 +56,7 @@ export default function NewTask() {
                     value={description}
                     onChangeText={setDescription}
                     multiline
+                    returnKeyType="done"
                     numberOfLines={4}
                 />
                 <Pressable 

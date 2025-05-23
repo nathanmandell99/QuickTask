@@ -50,7 +50,12 @@ function Task({ task, onUpdate, onDelete }: { task: TaskType; onUpdate: (task: T
                   </Pressable>
                   <View style={styles.textContainer}>
                       <Text style={styles.title}>{task.title}</Text>
-                      <Text style={styles.description}>{task.description}</Text>
+                      <Text style={styles.description}
+                      numberOfLines={3}
+                      ellipsizeMode="tail"
+                      >
+                        {task.description}
+                      </Text>
                   </View>
               </View>
               <Pressable onPress={() => handleDelete(task)}>
@@ -125,6 +130,7 @@ const getTaskStyles = (theme: any, isLandscape: boolean) => StyleSheet.create({
         fontSize: isLandscape ? 14 : 15,
         color: theme.colors.text,
         fontStyle: 'italic',
+        flexShrink: 1,
     },
     checkbox: {
         color: theme.colors.checkbox,
@@ -143,9 +149,12 @@ const getTaskStyles = (theme: any, isLandscape: boolean) => StyleSheet.create({
         alignItems: 'flex-start',
         gap: isLandscape ? 8 : 16,
         flex: 1,
+        minWidth: 0,
     },
     textContainer: {
         gap: isLandscape ? 4 : 8,
+        flex: 1,
+        minWidth: 0,
     },
     deleteButton: {
         backgroundColor: theme.colors.background,
@@ -154,6 +163,7 @@ const getTaskStyles = (theme: any, isLandscape: boolean) => StyleSheet.create({
         borderWidth: 1,
         borderColor: theme.colors.text,
         color: 'red',
+        marginLeft: 8,
     }
 });
 
