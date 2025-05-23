@@ -22,7 +22,7 @@ A simple and clean task manager for web, iOS, and Android.
    npx expo start
    ```
 
-From here, press `w` in the CLI to open the web version. To view the app
+From here, press `w` in the terminal to open the web version. To view the app
 version, it is simplest to use [Expo Go](https://expo.dev/go), which can be installed from
 the App Store or the Play Store. Once Expo Go is installed, open it
 and select "Scan QR Code." Scan the QR code printed in the terminal after
