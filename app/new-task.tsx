@@ -1,6 +1,6 @@
 import { useRouter } from "expo-router";
 import { useState } from "react";
-import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { Keyboard, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { useTask } from "../context/TaskContext";
 import { useTheme } from "../context/ThemeContext";
 import { Task } from "../types/Task";
@@ -57,6 +57,8 @@ export default function NewTask() {
                     onChangeText={setDescription}
                     multiline
                     returnKeyType="done"
+                    submitBehavior="blurAndSubmit"
+                    onSubmitEditing={Keyboard.dismiss}
                     numberOfLines={4}
                 />
                 <Pressable 
